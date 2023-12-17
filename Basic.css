@@ -56,7 +56,6 @@
 /* @import url("https://seele1306.github.io/Snippets/OnekoDM/import.css"); */
 
 
-
 /* ╔═══════════════════════════════╗ */
 /* ║           VARIABLES           ║ */
 /* ╚═══════════════════════════════╝ */
@@ -109,6 +108,7 @@
     --mactitlebar-max-btn-back: #39ea49;
     --macbuttons-serverlist-inner-top-margin: 32px;
 
+    /** Welcome **/
     /* Welcome nofication */
     --welcome-nofication-content: "Welcome aboard! Captain";
     --welcome-nofication-height: 30;
@@ -116,9 +116,10 @@
     --welcome-nofication-background: rgba(39, 39, 39, 0.4);
     --welcome-nofication-border: 3px solid rgb(36, 33, 33);
     --welcome-nofication-border-radius: 7;
-
-    --text-shadow-1: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
-    --text-shadow-2: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
+    
+    /* Welcome intro */
+    --welcome-text-shadow-1: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
+    --welcome-text-shadow-2: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
 
     /* Guild */
     --guild-hitbox-hover: 1; /* don't increase it more than 10 */
@@ -635,15 +636,12 @@ html {
     height: calc(100vh - var(--macbuttons-serverlist-inner-top-margin));
 } */
 .typeWindows__5fa63 {
-    
-    
     z-index: 102;
     margin-top: var(--window-padding);
     margin-left: 6px;
     position: absolute;
     opacity: 0.7;
     /* transform: translateY(-20px); */
-    
 }
 html:before {
     content: "";
@@ -802,6 +800,8 @@ html:before {
 .chat__52833 {
     z-index: 104;
 }
+
+
 
 /* ╔═══════════════════════════════╗ */
 /* ║           CHANNELS            ║ */
@@ -1030,7 +1030,7 @@ html:before {
 /* ║          POPOUT USER          ║ */
 /* ╚═══════════════════════════════╝ */
 
-/** role background **/
+/* Role background */
 .role__631a3 {
     transform: translate(0);
     overflow: hidden;
@@ -1077,7 +1077,8 @@ html:before {
 }
 
 /** Member Panel **/
-/* panel center */
+
+/* Panel center */
 .customStatus__3aa7f,
 .pronouns__8bcdb,
 .nickname__3d1d7,
@@ -1120,7 +1121,7 @@ html:before {
 }
 
 
-/* remake note */
+/* Remake note */
 .section__6f61e:has(.note_ba0c31) {
     margin: 6px 0 6px 0;
     padding-top: 16px;
@@ -1142,17 +1143,17 @@ html:before {
     display: none;
 }
 
-/* remove input dms */
+/* Remove input dms */
 .section__6f61e:has(.inputWrapper__934f5) { 
     display: none
 }
 
-/* remove divider */
+/* Remove divider */
 .userPanelOverlayBackground__34fc8 .divider__2bbbc:nth-child(4) {
     display: none;
 }
 
-/* remake banner */
+/* Remake banner */
 .banner__6d414.popoutBanner__9f5b9 {
     border-radius: 8px;
     margin: 7px;
@@ -1168,12 +1169,13 @@ html:before {
 .roundedBanner__9fa0a {
     border-radius: 0
 }
-/* mask center */
+
+/* Mask center */
 .bannerSVGWrapper__3e7b0 circle {
     cx: 50%;
 }
 
-/* avatar center */
+/* Avatar center */
 .profileCardUsernameRow__4cbd8 .info__40462  {
     display: none
 }
@@ -1201,7 +1203,7 @@ html:before {
     transform: translate(292%,-94%);
 }
 
-/* badges center */
+/* Badges center */
 .avatarPositionPanel__87e08 ~ .badgelistGroup__53eaa,
 .avatarPositionNormal__1797c ~ .profileBadges__7a7cb,
 .avatarPositionPremiumBanner__1e83d ~ .profileBadges__7a7cb,
@@ -1342,3 +1344,10 @@ html:before {
     transition-delay: var(--friend-time-unhover);
     transition-duration: 500ms;
 }
+
+
+
+/* ╔═══════════════════════════════╗ */
+/* ║        YOUR CUSTOM CSS        ║ */
+/* ╚═══════════════════════════════╝ */
+/* . . . */
