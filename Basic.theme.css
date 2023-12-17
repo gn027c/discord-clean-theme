@@ -1,0 +1,56 @@
+/**
+ * @name Basic Theme
+ * @author gn027c
+ * @authorId 914870154079391746
+ * @version ersion made
+ * @description Basic and basic
+ * @source https://github.com/IshiiAinari/BasicThemeDiscord/tree/main
+ * @website https://github.com/IshiiAinari
+ * @invite BShu37e4jg
+*/
+
+@import url(https://ishiiainari.github.io/BasicThemeDiscord/Basic.css);
+
+:root {
+    /* welcome nofication */
+    --welcome-nofication-content: "Welcome aboard, Captain!";
+    --welcome-nofication-height: 40;
+    --welcome-nofication-box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
+    --welcome-nofication-background: rgba(0, 0, 0, 0.4);
+    --welcome-nofication-border: 3px solid rgb(36, 33, 33);
+    --welcome-nofication-border-radius: 7;
+
+    /* friend */
+    --friend-first-background-color: rgba(41, 42, 44, .5);
+    --friend-secondary-background-color: rgba(41, 42, 44, .1);
+    --friend-third-background-color: rgba(21, 21, 21, 0.8);
+    --friend-border-color: rgba(255, 255, 255, 0.1);
+    --friend-border-color-hover: rgba(255, 255, 255, 0.3);
+    --friend-time-unhover: 2s; /* time to close side friend activity when don't hover */
+
+    /* background */
+    --background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKQJHBIBPWt03xHp7PmrpSueGIZ92bSi1LQ&usqp=CAU');
+    
+    /* memberside */
+    --member-background-color-alpha: .8;
+    --member-time-unhover: 1s; /* time to close side member when don't hover */
+
+    /* guild */
+    --guild-hitbox-hover: 1;
+    --guild-time-unhover: 5s; /* time to close side server when don't hover */
+
+    /* popoutUser > role */
+    --roles-radius: 0;
+
+    /* blur screen when don't focus */
+    --screen-blur: 0; /* set 1 to enable or 0 to disable */
+}
+
+/* reduce lag */
+/* * {
+    animation: none!important;
+    transition: none!important;
+}
+:root {
+    background: none !important;
+} */
