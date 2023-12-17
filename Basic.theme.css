@@ -12,38 +12,63 @@
 @import url(https://ishiiainari.github.io/Discord-Basic-Theme/Basic.css);
 
 :root {
-    /* welcome nofication */
-    --welcome-nofication-content: "Welcome aboard, Captain!";
-    --welcome-nofication-height: 40;
+    /* Background */
+    --accent-hue: 180;
+    --accent-saturation: 25%;
+    --accent-brightness: 5%;
+
+    /* Window */
+    --window-padding: 8px;
+    --window-radius: 8px;
+    --window-margin-item: 4px;
+
+    /* MacOS */
+    --mactitlebar-left-margin: 5px;
+    --mactitlebar-top-margin: 10px;
+    --mactitlebar-button-width: 20px;
+    --mactitlebar-button-height: 20px;
+    --mactitlebar-button-border-radius: 50px;
+    --mactitlebar-close-btn-back: #f25056;
+    --mactitlebar-min-btn-back: #fac536;
+    --mactitlebar-max-btn-back: #39ea49;
+    --macbuttons-serverlist-inner-top-margin: 32px;
+
+    /** Welcome **/
+    /* Welcome nofication */
+    --welcome-nofication-content: "Welcome aboard! Captain";
+    --welcome-nofication-height: 30;
     --welcome-nofication-box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.4);
-    --welcome-nofication-background: rgba(0, 0, 0, 0.4);
+    --welcome-nofication-background: rgba(39, 39, 39, 0.4);
     --welcome-nofication-border: 3px solid rgb(36, 33, 33);
     --welcome-nofication-border-radius: 7;
+    
+    /* Welcome intro */
+    --welcome-text-shadow-1: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.3);
+    --welcome-text-shadow-2: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8);
 
-    /* friend */
+    /* Guild */
+    --guild-hitbox-hover: 1; /* don't increase it more than 10 */
+    --guild-time-unhover: 3s; /* time to close side guild when don't hover */
+    
+    /* Members */
+    --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
+    --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px);
+
+    --member-time-unhover: 1s;
+
+    /* Friend */
     --friend-first-background-color: rgba(41, 42, 44, .5);
     --friend-secondary-background-color: rgba(41, 42, 44, .1);
     --friend-third-background-color: rgba(21, 21, 21, 0.8);
     --friend-border-color: rgba(255, 255, 255, 0.1);
     --friend-border-color-hover: rgba(255, 255, 255, 0.3);
-    --friend-time-unhover: 2s; /* time to close side friend activity when don't hover */
+    --friend-time-unhover: 3s; /* time to close side friend activity when don't hover */
 
-    /* background */
-    --background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdKQJHBIBPWt03xHp7PmrpSueGIZ92bSi1LQ&usqp=CAU');
-    
-    /* memberside */
-    --member-background-color-alpha: .8;
-    --member-time-unhover: 1s; /* time to close side member when don't hover */
-
-    /* guild */
-    --guild-hitbox-hover: 1;
-    --guild-time-unhover: 5s; /* time to close side server when don't hover */
-
-    /* popoutUser > role */
-    --roles-radius: 0;
-
-    /* blur screen when don't focus */
-    --screen-blur: 0; /* set 1 to enable or 0 to disable */
+    /* Scroller bar */
+    --scrollbar-auto-thumb: hsla(var(--accent-hue), 20%, 10%, .5);
+    --scrollbar-auto-track: transparent;
+    --scrollbar-thin-thumb: hsla(var(--accent-hue), 20%, 15%, .5);
+    --scrollbar-thin-track: transparent;
 }
 
 /* reduce lag */
