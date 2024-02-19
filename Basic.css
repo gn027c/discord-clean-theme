@@ -1,20 +1,8 @@
-/**
- * @name Basic Theme
- * @author gn027c
- * @authorId 914870154079391746
- * @version ersion made
- * @description Basic and basic
- * @source https://github.com/IshiiAinari/Discord/edit/main/Themes/BasicThemeDiscord/Basic.css
- * @website https://github.com/IshiiAinari
-*/
-
-
-
 /* ╔═[🟢🔴🟡]═══════════════════════════════════════════════════════════════════════════════════════════[🟣]═╗ */
 /* ║                                                BASIC  THEME                                               ║ */
 /* ╠══════════════════════════╦════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║ Author:                  ║ Ishii Ainari (gn027c)                              <914870154079391746>        ║ */
-/* ║ Source:                  ║ https://github.com/IshiiAinari                     <ver-1.5.1>                 ║ */
+/* ║ Source:                  ║ https://github.com/IshiiAinari                     <ver-1.5.2>                 ║ */
 /* ║ Website:                 ║ https://github.com/IshiiAinari                                                 ║ */
 /* ╠══════════════════════════╬════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║      N                   ║ This is a Basic genre Theme, giving users a gentle and enjoyable experience    ║ */
@@ -49,6 +37,7 @@
 
 /* Additional addons */
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://feorev.github.io/Themes/Discord/PublicSnippets/ConnectionsColorizer.css");
 @import url("https://dablulite.github.io/css-snippets/AccountDetailsGrid/import.css");
 @import url("https://dablulite.github.io/css-snippets/NoLightInDark/import.css");
 /* @import url("https://seele1306.github.io/Snippets/OnekoDM/import.css"); */
@@ -85,6 +74,29 @@
 }
 
 :root {
+    --spotify-color: 29, 185, 84;
+    --battlenet-color: 0, 174, 255;
+    --github-color: 255, 255, 255;
+    --riotgames-color: 211, 41, 54;
+    --leagueoflegends-color: 225, 146, 5;
+    --steam-color: 0, 0, 255;
+    --twitch-color: 100, 65, 164;
+    --x-color: 0, 172, 238;
+    --xbox-color: 0, 128, 0;
+    --youtube-color: 255, 0, 0;
+    --domain-color: 91, 111, 117;
+    --paypal-color: 0, 112, 186;
+    --tiktok-color: 255, 0, 80;
+    --ebay-color: 229, 50, 56;
+    --crunchyroll-color: 255, 230, 0;
+    --playstation-color: 0, 55, 145;
+    --epicgames-color: 0, 44, 119;
+    --facebook-color: 66, 103, 178;
+    --instagram-color: 195, 42, 163;
+    --reddit-color: 255, 69, 0;
+}
+
+:root {
     /* Background */
     --accent-hue: 213;
     --accent-saturation: 35%;
@@ -111,13 +123,13 @@
 
     /* Guild */
     --guild-hitbox-hover: 1; /* rate: 1-10 */
-    --guild-time-unhover: 5s; /* time to close side guild when don't hover */
+    --guild-time-unhover: 7s; /* time to close side guild when don't hover */
     
     /* Members */
     --roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
     --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px);
     --member-width: 250px;
-    --member-time-unhover: 3s;
+    --member-time-unhover: 5s;
 
     /* Friend */
     --friend-first-background-color: rgba(41, 42, 44, .5);
@@ -125,13 +137,18 @@
     --friend-third-background-color: rgba(21, 21, 21, 0.8);
     --friend-border-color: rgba(255, 255, 255, 0.1);
     --friend-border-color-hover: rgba(255, 255, 255, 0.3);
-    --friend-time-unhover: 3s; /* time to close side friend activity when don't hover */
+    --friend-time-unhover: 5s; /* time to close side friend activity when don't hover */
 
     /* Scroller bar */
     --scrollbar-auto-thumb: hsla(var(--accent-hue), 20%, 10%, .5);
     --scrollbar-auto-track: transparent;
     --scrollbar-thin-thumb: hsla(var(--accent-hue), 20%, 15%, .5);
     --scrollbar-thin-track: transparent;
+
+    /* Connections */
+    --conntections-border-radius: 16px; 
+    --conntections-opacity: 0.1;
+    --connections-shadow: inset 0 0 10px currentcolor
 }
 
 
@@ -343,7 +360,11 @@ body,
 .layer_ec16dd:has(.animatorRight__5895e) {     /* channel > call > infomation (music bot/call) */  
     background-color: hsla(var(--accent-hue), 10%, 15%, .9) !important
 }
-
+.layerContainer_d5a653 .popout__24e32 {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
 
 /* Chat */
 .wrapper_fbbb73 {                                                          /* verification to chat */  
@@ -437,7 +458,7 @@ body,
     background: hsla(var(--accent-hue), 15%, 10%, .6) !important; 
     border: 1px solid hsla(var(--accent-hue), 10%, 90%, .6); 
     border-radius: 8px;
-} 
+} .layer_ec16dd:has(.animatorRight__5895e)
 
 /* Guild */
 .expandedFolderBackground__1bec6 {  /* folder > item */
@@ -460,10 +481,10 @@ body,
     background: hsla(var(--accent-hue), 5%, 12%, .6) !important;
 }
 
-.userPopoutOuter_d739b2.theme-dark .userPopoutOverlayBackground_d8afa4 {
+.userPopoutOuter_d739b2.theme-dark .userPopoutOverlayBackground_d8afa4 /* VC Buttons */ {
     border: 1px solid rgba(255, 255, 255, .1);
 }
-.userPopoutOuter_d739b2.theme-light .userPopoutOverlayBackground_d8afa4 {
+.userPopoutOuter_d739b2.theme-light .userPopoutOverlayBackground_d8afa4 /* VC Buttons */ {
     border: 1px solid rgba(0, 0, 0, .3);
 }
 
@@ -965,8 +986,7 @@ body::before {
 .toolbar__88c63 .iconWrapper_af9215:has(
     [d^="M12"],                                       /* Threads button */
     [d^="M9.7"],                                      /* Notifications button unmuted*/
-    [d^="M1.3"],                                      /* Notifications button uuted*/
-    [d^="M14.5"]),                                    /* Memberlist button */
+    [d^="M1.3"]),                                     /* Notifications button uuted*/
 .toolbar__88c63 [href="https://support.discord.com"]{ /* Help button  */
     display: none;
 }
@@ -1319,17 +1339,13 @@ body::before {
 }
 
 
-
 /* ╔═══════════════════════════════╗ */
 /* ║             MEMBER            ║ */
 /* ╚═══════════════════════════════╝ */
 
 /* Member side */
-.chatContainer__23434 .chatContent__5dca8:not([aria-label^=" "]) {          /* chat not friend chat*/
+.content__1a4fe .chatContent__5dca8:not([aria-label^=" "]) {          /* chat not friend chat*/
 	max-width: calc(100% - 60px);
-}
-.chat__52833:has(.caret__33d19) .chatContainer__23434 .chatContent__5dca8 { /* topic chat */
-    max-width: calc(100% + 60px) !important;
 }
 .container_b2ce9c {
     z-index: 2;
@@ -1544,7 +1560,8 @@ body::before {
 .avatarUploaderNormal__2388b,
 .avatarPositionNormal__1797c,
 .avatarPositionPremiumBanner__1e83d,
-.avatarPositionPremiumNoBanner__8bf3b {
+.avatarPositionPremiumNoBanner__8bf3b,
+.avatarUploaderPremium_bbc93c {
     position: absolute;
     transform: translate(-50%);
     left: 50%;
@@ -1577,12 +1594,11 @@ body::before {
     left: 50%;
     background: transparent;
 }
-
 .headerTop__6628b {
     left: 18px;
 }
-
-.badgeList__243e0                                                           { transform: translate(50%, -70%) }
+.profileBadges__7a7cb.profileBadges__7a7cb                                  { transform: translate(-50%, 100%); right: 12%; }
+.userPopoutOverlayBackground_d8afa4                                         { margin-top: 50px   }
 .avatarPositionPanel__87e08 ~ .badgelistGroup__53eaa                        { transform: translate(-50%, 100%) }
 .userPanelOverlayBackground__34fc8:nth-child(2)                             { margin-top: 70px   }
 .avatarPositionNormal__1797c ~ .profileBadges__7a7cb                        { transform: translate(-50%, 285%)  }
@@ -1594,20 +1610,21 @@ body::before {
 
 .layer__2efaa .accountProfileCard__22589 .userInfo__8f826 .profileCardUsernameRow__4cbd8 {
     position: absolute;
-    left: 0;
+    right: 20px;
     margin-left: 20px;
 }
 
 .layer__2efaa .accountProfileCard__22589 .userInfo__8f826 .container__5bda1 {
-    right: 54px;
+    left: 20px;
 }
 .badgeList__243e0 {
     position: absolute;
     border-radius: 8px;
     background-color: #333135;
-    margin-top: 18px;
+    margin-top: 4px;
     padding: 2px 3px 2px 3px;
 }
+.info__40462.userTag__4ca14 { display: none }
 
 
 
