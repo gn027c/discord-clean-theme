@@ -201,7 +201,8 @@ body,
 }
 #app-mount                                  { background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-brightness), .7); backdrop-filter: blur(4px) } /* global  */
 #app-mount .sidebarRegion__60457,                                                                                                                                             /* title bar  */
-#app-mount .sidebar__0OpfR                  { background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-brightness), .3)  }                            /* setting  */
+#app-mount .sidebar__0OpfR, 
+#app-mount .contentRegionScroller__86c79    { background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-brightness), .3)  }                            /* setting  */
 #app-mount .wrapper_a7e7a8                  { background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-brightness), .01) }                            /* guild */
 #app-mount .tree__7a511                     { background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-brightness), .3)  }                            /* guild > tree */
 #app-mount .sidebar_ded4b5                  { background-color: hsla(var(--accent-hue), var(--accent-saturation), var(--accent-brightness), .5)  }                            /* channel */
