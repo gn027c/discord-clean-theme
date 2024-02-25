@@ -1,4 +1,4 @@
-## Introduction
+## INTRODUCTION
 Đây là Theme với chủ đề Basic, mang đến cho người dùng một trải nghiệm nhẹ nhàng và bình thuòng với những thay đổi cơ bản.
 ## FEATURE
 - Chỉnh màu sáng, tối hoặc chủ đạo cho Theme
