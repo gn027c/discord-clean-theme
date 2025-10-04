@@ -1,15 +1,15 @@
 /**
- * @name Basic Theme
+ * @name Clean Theme
  * @author gn027c
  * @authorId 914870154079391746
  * @version ersion made
- * @description Basic and basic
- * @source https://github.com/IshiiAinari/BasicThemeDiscord/tree/main
- * @website https://github.com/IshiiAinari
+ * @description Clean and clean
+ * @source https://github.com/gn027c/discord-clean-theme
+ * @website https://github.com/gn027c
  * @invite BShu37e4jg
 */
 
-@import url(https://ishiiainari.github.io/Discord-Basic-Theme/Basic.css);
+@import url(https://gn027c.github.io/discord-basic-theme/style.css);
 
 :root {
     --spotify-color: 29, 185, 84;
